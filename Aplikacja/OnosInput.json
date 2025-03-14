@@ -1,0 +1,52 @@
+{
+      "priority": 40000,
+      "timeout": 0,
+      "isPermanent": true,
+      "deviceId": "of:000000000000000%1",
+      "treatment": {
+        "instructions": [
+          {
+            "type": "OUTPUT",
+            "port": "%2"
+          }
+        ]
+      },
+      "selector": {
+        "criteria": [
+          {
+            "type": "ETH_TYPE",
+            "ethType": "0x0800"
+          },
+          {
+            "type": "IPV4_DST",
+            "ip": "10.0.0.%3/32"
+          }
+        ]
+      }
+    },
+    {
+      "priority": 40000,
+      "timeout": 0,
+      "isPermanent": true,
+      "deviceId": "of:000000000000000%4",
+      "treatment": {
+        "instructions": [
+          {
+            "type": "OUTPUT",
+            "port": "%5"
+          }
+        ]
+      },
+      "selector": {
+        "criteria": [
+          {
+            "type": "ETH_TYPE",
+            "ethType": "0x0800"
+          },
+          {
+            "type": "IPV4_DST",
+            "ip": "10.0.0.%6/32"
+          }
+        ]
+      }
+    }
